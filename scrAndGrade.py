@@ -8,6 +8,13 @@ def grdAndScr(num):
     elif num >=90 :
         print "Score:",num,"; Your grade is A"
     else:
-        print "Score:",num;"; Your grade is F"
+        print "Score:",num,"; Your grade is F"
 
-grdAndScr(61)
+import random
+ran=0
+
+for i in range(0,10):
+    ran=random.randint(60,100)
+
+    grdAndScr(ran)       
+
